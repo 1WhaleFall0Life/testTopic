@@ -144,16 +144,16 @@ https://html.spec.whatwg.org/multipage/webappapis.html#perform-a-microtask-check
 
 <见具体演示>
 
-> 添加任务到微队列的主要方式主要是使用 Promise、Mutationobserver
->
-> 例如:
->
-> ``` // 立即把一个函数添加到微队列 ```
-> ``` ```
-> ``` Promise.resolve().then(函数) ```
-> 
+```
+添加任务到微队列的主要方式主要是使用 Promise、Mutationobserver
+例如:
+// 立即把一个函数添加到微队列
+Promise.resolve().then(函数)
+```
 
-> 浏览器还有很多其他的队列，由于和我们开发关系不大，不作考虑
+```
+浏览器还有很多其他的队列，由于和我们开发关系不大，不作考虑
+```
 
 ```
 面试题: 阐述一下JS的事件循环
